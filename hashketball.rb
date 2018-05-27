@@ -150,6 +150,8 @@ def num_points_scored (name)
   game_hash.each do |location, team_data|
  players = team_data[:players][:name]
  players.each do |team_data|
+   if team_data[:name] == name
+     answer = team_data
 
   
 
