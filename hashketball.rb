@@ -148,13 +148,7 @@ puts home_team_name
  
 def num_points_scored (name)
   game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      unless data == name 
-        return points 
-      end 
-    end 
-  end
-end 
+ team_data[:name]
 
   
 
