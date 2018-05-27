@@ -148,7 +148,8 @@ puts home_team_name
  
 def num_points_scored (name)
   game_hash.each do |location, team_data|
- team_data[:players][:name]
+ players = team_data[:players][:name]
+ 
 
   
 
