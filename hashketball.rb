@@ -149,9 +149,15 @@ puts home_team_name
 def num_points_scored (name)
   game_hash.each do |location, team_data|
  players = team_data[:players][:name]
- players.each do |team_data|
-   if team_data[:name] == name
-     answer = team_data
+ players.each do |name, points|
+   if team_data[:players][:name] == name
+     answer = team_data[:players][:points]
+   end 
+ end 
+ end
+ answer 
+end 
+ 
 
   
 
